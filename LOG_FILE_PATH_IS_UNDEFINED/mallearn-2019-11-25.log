@@ -1,0 +1,812 @@
+2019-11-25 11:12:37.932  INFO 419856 --- [main] c.e.learnmall.LearnMallApplication       : Starting LearnMallApplication on 6AIY682U3XQAGC7 with PID 419856 (E:\studyVue\malllearn\target\classes started by Administrator in E:\studyVue\malllearn)
+2019-11-25 11:12:37.936  INFO 419856 --- [main] c.e.learnmall.LearnMallApplication       : No active profile set, falling back to default profiles: default
+2019-11-25 11:12:40.423  INFO 419856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-25 11:12:40.435  INFO 419856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-25 11:12:40.547  INFO 419856 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.learnmall.nosql.mongodb.repository.MemberReadHistoryRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2019-11-25 11:12:40.585  INFO 419856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 143ms. Found 1 repository interfaces.
+2019-11-25 11:12:40.592  INFO 419856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-25 11:12:40.592  INFO 419856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-25 11:12:40.630  INFO 419856 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.learnmall.nosql.mongodb.repository.MemberReadHistoryRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2019-11-25 11:12:40.630  INFO 419856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37ms. Found 0 repository interfaces.
+2019-11-25 11:12:40.638  INFO 419856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-25 11:12:40.638  INFO 419856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-25 11:12:40.670  INFO 419856 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.learnmall.nosql.elasticsearch.repository.EsProductRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2019-11-25 11:12:40.690  INFO 419856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52ms. Found 1 repository interfaces.
+2019-11-25 11:12:40.705  INFO 419856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-25 11:12:40.707  INFO 419856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-25 11:12:40.750  INFO 419856 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.learnmall.nosql.elasticsearch.repository.EsProductRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2019-11-25 11:12:40.750  INFO 419856 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.learnmall.nosql.mongodb.repository.MemberReadHistoryRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2019-11-25 11:12:40.751  INFO 419856 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33ms. Found 0 repository interfaces.
+2019-11-25 11:12:41.463  INFO 419856 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 11:12:41.645  INFO 419856 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 11:12:41.650  INFO 419856 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 11:12:41.656  INFO 419856 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7f7b6639' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 11:12:41.659  INFO 419856 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 11:12:41.671  INFO 419856 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 11:12:42.568  INFO 419856 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-25 11:12:42.583  INFO 419856 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-25 11:12:42.583  INFO 419856 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-25 11:12:42.594  INFO 419856 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-11-25 11:12:42.594  INFO 419856 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-11-25 11:12:42.595  INFO 419856 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-11-25 11:12:42.660  INFO 419856 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-11-25 11:12:42.886  INFO 419856 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-25 11:12:42.886  INFO 419856 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4896 ms
+2019-11-25 11:12:44.051  INFO 419856 --- [main] o.elasticsearch.plugins.PluginsService   : no modules loaded
+2019-11-25 11:12:44.052  INFO 419856 --- [main] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2019-11-25 11:12:44.052  INFO 419856 --- [main] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2019-11-25 11:12:44.052  INFO 419856 --- [main] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2019-11-25 11:12:44.052  INFO 419856 --- [main] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2019-11-25 11:12:44.052  INFO 419856 --- [main] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2019-11-25 11:12:46.293  INFO 419856 --- [main] o.s.d.e.c.TransportClientFactoryBean     : Adding transport node : 127.0.0.1:9300
+2019-11-25 11:12:49.277  INFO 419856 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-11-25 11:12:50.155  INFO 419856 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-11-25 11:12:50.595  INFO 419856 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-25 11:12:50.595  INFO 419856 --- [main] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2019-11-25 11:12:50.715  INFO 419856 --- [cluster-ClusterId{value='5ddb46b213901b6e76012587', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:30}] to localhost:27017
+2019-11-25 11:12:50.719  INFO 419856 --- [cluster-ClusterId{value='5ddb46b213901b6e76012587', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 4]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=1717878}
+2019-11-25 11:12:50.721  INFO 419856 --- [cluster-ClusterId{value='5ddb46b213901b6e76012587', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2019-11-25 11:12:50.911  WARN 419856 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2019-11-25 11:12:50.917  WARN 419856 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2019-11-25 11:12:50.919  WARN 419856 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class java.time.Instant as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2019-11-25 11:12:50.919  WARN 419856 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.Instant to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2019-11-25 11:12:51.123  WARN 419856 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2019-11-25 11:12:51.125  WARN 419856 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2019-11-25 11:12:51.125  WARN 419856 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class java.time.Instant as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2019-11-25 11:12:51.126  WARN 419856 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.Instant to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2019-11-25 11:12:51.237  WARN 419856 --- [main] .m.c.i.MongoPersistentEntityIndexCreator : Automatic index creation will be disabled by default as of Spring Data MongoDB 3.x.
+	Please use 'MongoMappingContext#setAutoIndexCreation(boolean)' or override 'MongoConfigurationSupport#autoIndexCreation()' to be explicit.
+	However, we recommend setting up indices manually in an application ready block. You may use index derivation there as well.
+
+	> -----------------------------------------------------------------------------------------
+	> @EventListener(ApplicationReadyEvent.class)
+	> public void initIndicesAfterStartup() {
+	>
+	>     IndexOperations indexOps = mongoTemplate.indexOps(DomainType.class);
+	>
+	>     IndexResolver resolver = new MongoPersistentEntityIndexResolver(mongoMappingContext);
+	>     resolver.resolveIndexFor(DomainType.class).forEach(indexOps::ensureIndex);
+	> }
+	> -----------------------------------------------------------------------------------------
+
+2019-11-25 11:12:51.381  INFO 419856 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:31}] to localhost:27017
+2019-11-25 11:13:16.406  INFO 419856 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-11-25 11:13:16.576  INFO 419856 --- [main] c.e.learnmall.config.RabbitMqConfig      : 创建交换机:mall.order.direct
+2019-11-25 11:13:16.583  INFO 419856 --- [main] c.e.learnmall.config.RabbitMqConfig      : 创建延时交换机:mall.order.direct.ttl
+2019-11-25 11:13:16.916  INFO 419856 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2480acc3, org.springframework.security.web.context.SecurityContextPersistenceFilter@395c21ee, org.springframework.security.web.header.HeaderWriterFilter@5980e29f, org.springframework.security.web.authentication.logout.LogoutFilter@5bfeb9ba, com.example.learnmall.component.JwtAuthenticationTokenFilter@2d5e051e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@669e730d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@60317de8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fe3199d, org.springframework.security.web.session.SessionManagementFilter@1a67bde5, org.springframework.security.web.access.ExceptionTranslationFilter@5746609e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@28b47211]
+2019-11-25 11:13:16.989  INFO 419856 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-11-25 11:13:18.579  INFO 419856 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-25 11:13:29.961  INFO 419856 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2019-11-25 11:13:30.685  INFO 419856 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-25 11:13:31.075  INFO 419856 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-25 11:13:31.313  INFO 419856 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-25 11:13:33.816  INFO 419856 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_1
+2019-11-25 11:13:33.824  INFO 419856 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingPOST_1
+2019-11-25 11:13:34.893  INFO 419856 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2019-11-25 11:13:39.065  INFO 419856 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#57e5396b:0/SimpleConnection@735d7b99 [delegate=amqp://mall@127.0.0.1:5672//mall, localPort= 52158]
+2019-11-25 11:13:45.263  INFO 419856 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-25 11:13:45.268  INFO 419856 --- [main] c.e.learnmall.LearnMallApplication       : Started LearnMallApplication in 68.685 seconds (JVM running for 70.173)
+2019-11-25 11:14:00.001  INFO 419856 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:15:00.002  INFO 419856 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:16:00.002  INFO 419856 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:17:00.003  INFO 419856 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:18:00.001  INFO 419856 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:19:00.003  INFO 419856 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:20:00.001  INFO 419856 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:20:50.756  INFO 419856 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-25 11:20:50.772  INFO 419856 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-25 11:20:51.446  INFO 419856 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 673 ms
+2019-11-25 11:21:00.003  INFO 419856 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:22:00.002  INFO 419856 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:23:00.002  INFO 419856 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:24:00.002  INFO 419856 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:25:00.002  INFO 419856 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:26:00.002  INFO 419856 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:27:00.002  INFO 419856 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:28:00.003  INFO 419856 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:29:13.030  INFO 423380 --- [main] c.e.learnmall.LearnMallApplication       : Starting LearnMallApplication on 6AIY682U3XQAGC7 with PID 423380 (E:\studyVue\malllearn\target\classes started by Administrator in E:\studyVue\malllearn)
+2019-11-25 11:29:13.034  INFO 423380 --- [main] c.e.learnmall.LearnMallApplication       : No active profile set, falling back to default profiles: default
+2019-11-25 11:29:17.497  INFO 423380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-25 11:29:17.503  INFO 423380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-25 11:29:17.637  INFO 423380 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.learnmall.nosql.mongodb.repository.MemberReadHistoryRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2019-11-25 11:29:17.682  INFO 423380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 170ms. Found 1 repository interfaces.
+2019-11-25 11:29:17.699  INFO 423380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-25 11:29:17.701  INFO 423380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-25 11:29:17.738  INFO 423380 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.learnmall.nosql.mongodb.repository.MemberReadHistoryRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2019-11-25 11:29:17.738  INFO 423380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36ms. Found 0 repository interfaces.
+2019-11-25 11:29:17.745  INFO 423380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-25 11:29:17.745  INFO 423380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-25 11:29:17.776  INFO 423380 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.learnmall.nosql.elasticsearch.repository.EsProductRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2019-11-25 11:29:17.802  INFO 423380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56ms. Found 1 repository interfaces.
+2019-11-25 11:29:17.837  INFO 423380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-25 11:29:17.844  INFO 423380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-25 11:29:17.901  INFO 423380 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.learnmall.nosql.elasticsearch.repository.EsProductRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2019-11-25 11:29:17.902  INFO 423380 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.learnmall.nosql.mongodb.repository.MemberReadHistoryRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2019-11-25 11:29:17.902  INFO 423380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44ms. Found 0 repository interfaces.
+2019-11-25 11:29:18.849  INFO 423380 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 11:29:19.100  INFO 423380 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 11:29:19.104  INFO 423380 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 11:29:19.116  INFO 423380 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@d70f722' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 11:29:19.119  INFO 423380 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 11:29:19.140  INFO 423380 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 11:29:19.876  INFO 423380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-25 11:29:19.902  INFO 423380 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-25 11:29:19.903  INFO 423380 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-25 11:29:19.905  INFO 423380 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-11-25 11:29:19.905  INFO 423380 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-11-25 11:29:19.906  INFO 423380 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-11-25 11:29:19.926  INFO 423380 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-11-25 11:29:20.149  INFO 423380 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-25 11:29:20.149  INFO 423380 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7060 ms
+2019-11-25 11:29:21.370  INFO 423380 --- [main] o.elasticsearch.plugins.PluginsService   : no modules loaded
+2019-11-25 11:29:21.372  INFO 423380 --- [main] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2019-11-25 11:29:21.372  INFO 423380 --- [main] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2019-11-25 11:29:21.372  INFO 423380 --- [main] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2019-11-25 11:29:21.372  INFO 423380 --- [main] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2019-11-25 11:29:21.372  INFO 423380 --- [main] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2019-11-25 11:29:24.463  INFO 423380 --- [main] o.s.d.e.c.TransportClientFactoryBean     : Adding transport node : 127.0.0.1:9300
+2019-11-25 11:29:26.691  INFO 423380 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-11-25 11:29:27.260  INFO 423380 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-11-25 11:29:27.739  INFO 423380 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-25 11:29:27.740  INFO 423380 --- [main] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2019-11-25 11:29:27.870  INFO 423380 --- [cluster-ClusterId{value='5ddb4a97f7018b2c6926dd84', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:32}] to localhost:27017
+2019-11-25 11:29:27.875  INFO 423380 --- [cluster-ClusterId{value='5ddb4a97f7018b2c6926dd84', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 4]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=1672088}
+2019-11-25 11:29:27.876  INFO 423380 --- [cluster-ClusterId{value='5ddb4a97f7018b2c6926dd84', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2019-11-25 11:29:28.136  WARN 423380 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2019-11-25 11:29:28.142  WARN 423380 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2019-11-25 11:29:28.144  WARN 423380 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class java.time.Instant as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2019-11-25 11:29:28.144  WARN 423380 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.Instant to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2019-11-25 11:29:28.373  WARN 423380 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2019-11-25 11:29:28.375  WARN 423380 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2019-11-25 11:29:28.376  WARN 423380 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class java.time.Instant as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2019-11-25 11:29:28.376  WARN 423380 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.Instant to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2019-11-25 11:29:28.467  WARN 423380 --- [main] .m.c.i.MongoPersistentEntityIndexCreator : Automatic index creation will be disabled by default as of Spring Data MongoDB 3.x.
+	Please use 'MongoMappingContext#setAutoIndexCreation(boolean)' or override 'MongoConfigurationSupport#autoIndexCreation()' to be explicit.
+	However, we recommend setting up indices manually in an application ready block. You may use index derivation there as well.
+
+	> -----------------------------------------------------------------------------------------
+	> @EventListener(ApplicationReadyEvent.class)
+	> public void initIndicesAfterStartup() {
+	>
+	>     IndexOperations indexOps = mongoTemplate.indexOps(DomainType.class);
+	>
+	>     IndexResolver resolver = new MongoPersistentEntityIndexResolver(mongoMappingContext);
+	>     resolver.resolveIndexFor(DomainType.class).forEach(indexOps::ensureIndex);
+	> }
+	> -----------------------------------------------------------------------------------------
+
+2019-11-25 11:29:28.582  INFO 423380 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:33}] to localhost:27017
+2019-11-25 11:29:33.366  INFO 423380 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-11-25 11:29:33.524  INFO 423380 --- [main] c.e.learnmall.config.RabbitMqConfig      : 创建交换机:mall.order.direct
+2019-11-25 11:29:33.531  INFO 423380 --- [main] c.e.learnmall.config.RabbitMqConfig      : 创建延时交换机:mall.order.direct.ttl
+2019-11-25 11:29:33.958  INFO 423380 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@27ea552d, org.springframework.security.web.context.SecurityContextPersistenceFilter@5f6ba085, org.springframework.security.web.header.HeaderWriterFilter@78e34499, org.springframework.security.web.authentication.logout.LogoutFilter@67eabe02, com.example.learnmall.component.JwtAuthenticationTokenFilter@32a074ed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26f7b114, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@524418a2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a57c5d9, org.springframework.security.web.session.SessionManagementFilter@29f114e0, org.springframework.security.web.access.ExceptionTranslationFilter@5eadc347, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5183131d]
+2019-11-25 11:29:34.011  INFO 423380 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-11-25 11:29:34.526  INFO 423380 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-25 11:29:35.773  INFO 423380 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2019-11-25 11:29:36.351  INFO 423380 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-25 11:29:36.540  INFO 423380 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-25 11:29:36.631  INFO 423380 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-25 11:29:36.984  INFO 423380 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_1
+2019-11-25 11:29:36.992  INFO 423380 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingPOST_1
+2019-11-25 11:29:37.240  INFO 423380 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2019-11-25 11:29:37.402  INFO 423380 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#52831a73:0/SimpleConnection@2c914364 [delegate=amqp://mall@127.0.0.1:5672//mall, localPort= 53209]
+2019-11-25 11:29:37.615  INFO 423380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-25 11:29:37.617  INFO 423380 --- [main] c.e.learnmall.LearnMallApplication       : Started LearnMallApplication in 26.262 seconds (JVM running for 28.699)
+2019-11-25 11:30:00.001  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:30:58.550  INFO 423380 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-25 11:30:58.550  INFO 423380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-25 11:30:58.609  INFO 423380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 59 ms
+2019-11-25 11:30:59.099  INFO 423380 --- [http-nio-8080-exec-2] c.e.l.controller.UmsAdminController      : 登入-------------------------------------
+2019-11-25 11:31:00.003  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:31:04.753  INFO 423380 --- [http-nio-8080-exec-2] c.e.learnmall.component.WebLogAspect     : {"result":{"code":0,"data":{"tokenHead":"Bearer","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImNyZWF0ZSI6MTU3NDY1MjY2NDA2OSwiZXhwIjoxNTc1MjU3NDY0fQ.hLRNMbh8HUOx0I7yZl974FW9GimvQKB2iCadEYtqB7XW133PIgg0HzTTEfFjNEAeZ-RxBVdV15MvHKokEkCgkA"}},"basePath":"http://localhost:8080","method":"POST","ip":"admin","parameter":{},"description":"用户登录成功后返回token","spendTimen":5294,"uri":"/admin/login","url":"http://localhost:8080/admin/login"}
+2019-11-25 11:31:23.811  INFO 423380 --- [http-nio-8080-exec-5] c.e.l.controller.UmsAdminController      : 登入-------------------------------------
+2019-11-25 11:31:23.980  INFO 423380 --- [http-nio-8080-exec-5] c.e.learnmall.component.WebLogAspect     : {"result":{"code":0,"data":{"tokenHead":"Bearer","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImNyZWF0ZSI6MTU3NDY1MjY4Mzk3OCwiZXhwIjoxNTc1MjU3NDgzfQ.klGRfV2fzyvwJKqLXMwkWuSl0r3X5ZqY8_biSJFVJM7P8KbeEXMZ90IOJWz77eVkPIjr478VTssG4Zt1S2BW3g"}},"basePath":"http://localhost:8080","method":"POST","ip":"admin","parameter":{},"description":"用户登录成功后返回token","spendTimen":168,"uri":"/admin/login","url":"http://localhost:8080/admin/login"}
+2019-11-25 11:31:38.209  INFO 423380 --- [http-nio-8080-exec-9] c.e.l.controller.UmsAdminController      : 登入-------------------------------------
+2019-11-25 11:31:38.443  INFO 423380 --- [http-nio-8080-exec-9] c.e.learnmall.component.WebLogAspect     : {"result":{"code":0,"data":{"tokenHead":"Bearer","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImNyZWF0ZSI6MTU3NDY1MjY5ODQ0MywiZXhwIjoxNTc1MjU3NDk4fQ.TqUFJd0WNodgHgu8sKRrH0e00YX3YzIJzRAv1fuZgI47YnCapWKyX-IgamulGUmOJjLWzNrMzCNHUuLpDoAvHA"}},"basePath":"http://localhost:8080","method":"POST","ip":"admin","parameter":{},"description":"用户登录成功后返回token","spendTimen":234,"uri":"/admin/login","url":"http://localhost:8080/admin/login"}
+2019-11-25 11:32:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:32:11.360  INFO 423380 --- [http-nio-8080-exec-2] c.e.l.controller.UmsAdminController      : 登入-------------------------------------
+2019-11-25 11:32:11.519  INFO 423380 --- [http-nio-8080-exec-2] c.e.learnmall.component.WebLogAspect     : {"result":{"code":0,"data":{"tokenHead":"Bearer","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImNyZWF0ZSI6MTU3NDY1MjczMTUxOCwiZXhwIjoxNTc1MjU3NTMxfQ.m_V-107fIosuZ4vJ13oRHggOkLeZg999VyXz_5YIsHMpBZMwvdpD8X9McKIHmFcDBCIXwhZZDiV0c-uH9tSc0A"}},"basePath":"http://localhost:8080","method":"POST","ip":"admin","parameter":{},"description":"用户登录成功后返回token","spendTimen":159,"uri":"/admin/login","url":"http://localhost:8080/admin/login"}
+2019-11-25 11:33:00.003  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:34:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:35:00.003  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:36:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:37:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:38:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:38:51.227  INFO 423380 --- [http-nio-8080-exec-5] c.e.l.controller.UmsAdminController      : 登入-------------------------------------
+2019-11-25 11:38:51.500  INFO 423380 --- [http-nio-8080-exec-5] c.e.learnmall.component.WebLogAspect     : {"result":{"code":0,"data":{"tokenHead":"Bearer","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImNyZWF0ZSI6MTU3NDY1MzEzMTQ5OSwiZXhwIjoxNTc1MjU3OTMxfQ.KDTR1SC-Zg3HpaZ-ufQrroM4Z7i1fDSCz1s_VYYXSnTOa3eZej2S5QDoBFg8Wkaj8rceGdptsyFgi1YLcmGLug"}},"basePath":"http://localhost:8080","method":"POST","ip":"admin","parameter":{},"description":"用户登录成功后返回token","spendTimen":272,"uri":"/admin/login","url":"http://localhost:8080/admin/login"}
+2019-11-25 11:39:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:40:00.003  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:41:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:42:00.003  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:43:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:44:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:45:00.004  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:46:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:47:00.003  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:48:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:49:00.003  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:50:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:51:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:52:00.003  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:53:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:54:00.003  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:55:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:56:00.003  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:57:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:58:00.003  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 11:59:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:00:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:01:00.003  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:02:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:03:00.003  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:04:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:05:00.003  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:06:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:07:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:08:00.003  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:09:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:10:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:11:00.001  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:12:00.003  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:13:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:14:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:15:00.003  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:16:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:17:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:18:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:18:35.585  INFO 423380 --- [http-nio-8080-exec-8] c.e.l.controller.UmsAdminController      : 登入-------------------------------------
+2019-11-25 12:18:36.891  INFO 423380 --- [http-nio-8080-exec-8] c.e.learnmall.component.WebLogAspect     : {"result":{"code":0,"data":{"tokenHead":"Bearer","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImNyZWF0ZSI6MTU3NDY1NTUxNjg5MSwiZXhwIjoxNTc1MjYwMzE2fQ.gGOWzLUmQY4qKvOecg_dsEP-eqKW8_gx1A0aPzPiF_pp4UskRjt-0OeDZTpxThTVXF9T3LhH2YAmc4WCinnI1g"}},"basePath":"http://localhost:8080","method":"POST","ip":"admin","parameter":{},"description":"用户登录成功后返回token","spendTimen":1306,"uri":"/admin/login","url":"http://localhost:8080/admin/login"}
+2019-11-25 12:19:00.003  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:19:27.735  INFO 423380 --- [http-nio-8080-exec-1] c.e.l.controller.UmsAdminController      : 登入-------------------------------------
+2019-11-25 12:19:27.948  INFO 423380 --- [http-nio-8080-exec-1] c.e.learnmall.component.WebLogAspect     : {"result":{"code":0,"data":{"tokenHead":"Bearer","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImNyZWF0ZSI6MTU3NDY1NTU2Nzk0NywiZXhwIjoxNTc1MjYwMzY3fQ.8kLXhgK_PUJmVRVuUfUdPsqdPXGNmso1o-oXthiLRhQiZz0SBFeTNJ90deG_v_asEre1bLY5GYnjzq1sQRXB3g"}},"basePath":"http://localhost:8080","method":"POST","ip":"admin","parameter":{},"description":"用户登录成功后返回token","spendTimen":212,"uri":"/admin/login","url":"http://localhost:8080/admin/login"}
+2019-11-25 12:19:33.835  INFO 423380 --- [http-nio-8080-exec-4] c.e.l.controller.UmsAdminController      : 登入-------------------------------------
+2019-11-25 12:19:34.072  INFO 423380 --- [http-nio-8080-exec-4] c.e.learnmall.component.WebLogAspect     : {"result":{"code":0,"data":{"tokenHead":"Bearer","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImNyZWF0ZSI6MTU3NDY1NTU3NDA3MiwiZXhwIjoxNTc1MjYwMzc0fQ.eTYqwhj_FWKncfvzob7Xn-tIIFNOKniZi4PmT5LRquAs9Y3T-oItmyNvXAx4gqFQPJ-05kXRY0RJVVse_6hXfg"}},"basePath":"http://localhost:8080","method":"POST","ip":"admin","parameter":{},"description":"用户登录成功后返回token","spendTimen":237,"uri":"/admin/login","url":"http://localhost:8080/admin/login"}
+2019-11-25 12:19:43.212  INFO 423380 --- [http-nio-8080-exec-7] c.e.l.controller.UmsAdminController      : 登入-------------------------------------
+2019-11-25 12:19:43.457  INFO 423380 --- [http-nio-8080-exec-7] c.e.learnmall.component.WebLogAspect     : {"result":{"code":0,"data":{"tokenHead":"Bearer","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImNyZWF0ZSI6MTU3NDY1NTU4MzQ1NSwiZXhwIjoxNTc1MjYwMzgzfQ.EZo-LojsHH0jgPNBDE33uzlHHacIh1LbFSJg91TRMFEw_vj3LB4UMXzTppe0vMf8icYm2ydUkIkUXLQPieFp_A"}},"basePath":"http://localhost:8080","method":"POST","ip":"admin","parameter":{},"description":"用户登录成功后返回token","spendTimen":244,"uri":"/admin/login","url":"http://localhost:8080/admin/login"}
+2019-11-25 12:20:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:20:19.671  INFO 423380 --- [http-nio-8080-exec-10] c.e.l.controller.UmsAdminController      : 登入-------------------------------------
+2019-11-25 12:20:19.882  INFO 423380 --- [http-nio-8080-exec-10] c.e.learnmall.component.WebLogAspect     : {"result":{"code":0,"data":{"tokenHead":"Bearer","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImNyZWF0ZSI6MTU3NDY1NTYxOTg4MSwiZXhwIjoxNTc1MjYwNDE5fQ.b_hLUNhkeekKtG-geZUXUypGlJl9CeI3-K5U9JOs_jKB2hBjF_FqvlY9EvlVKfdi042LIDlM-fOh9Rp5qBZF-Q"}},"basePath":"http://localhost:8080","method":"POST","ip":"admin","parameter":{},"description":"用户登录成功后返回token","spendTimen":211,"uri":"/admin/login","url":"http://localhost:8080/admin/login"}
+2019-11-25 12:20:27.914  INFO 423380 --- [http-nio-8080-exec-3] c.e.l.controller.UmsAdminController      : 登入-------------------------------------
+2019-11-25 12:20:28.130  INFO 423380 --- [http-nio-8080-exec-3] c.e.learnmall.component.WebLogAspect     : {"result":{"code":0,"data":{"tokenHead":"Bearer","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImNyZWF0ZSI6MTU3NDY1NTYyODEyOSwiZXhwIjoxNTc1MjYwNDI4fQ.ayh96CEujUWCxRbSRjC6LmTAXMo6dFY_7dVyFQJ-2873jBMmmYUNFtcFK4k1-mjsTAECYbxMTMKauzEjHt-f8g"}},"basePath":"http://localhost:8080","method":"POST","ip":"admin","parameter":{},"description":"用户登录成功后返回token","spendTimen":216,"uri":"/admin/login","url":"http://localhost:8080/admin/login"}
+2019-11-25 12:20:59.615  INFO 423380 --- [http-nio-8080-exec-6] c.e.l.controller.UmsAdminController      : 登入-------------------------------------
+2019-11-25 12:20:59.783  INFO 423380 --- [http-nio-8080-exec-6] c.e.learnmall.component.WebLogAspect     : {"result":{"code":0,"data":{"tokenHead":"Bearer","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImNyZWF0ZSI6MTU3NDY1NTY1OTc4MiwiZXhwIjoxNTc1MjYwNDU5fQ.lwKE5Hrgm8sfHG0FstH0-odMLawelWIj0hBJB1R_Hx033TBU0j-gQoXOj8Chr9HxlvtwHdlZ4AN_-eCTS3E93w"}},"basePath":"http://localhost:8080","method":"POST","ip":"admin","parameter":{},"description":"用户登录成功后返回token","spendTimen":168,"uri":"/admin/login","url":"http://localhost:8080/admin/login"}
+2019-11-25 12:21:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:22:00.003  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:23:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:24:00.003  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:24:14.334  INFO 423380 --- [http-nio-8080-exec-9] c.e.l.controller.UmsAdminController      : 登入-------------------------------------
+2019-11-25 12:24:14.645  INFO 423380 --- [http-nio-8080-exec-9] c.e.learnmall.component.WebLogAspect     : {"result":{"code":0,"data":{"tokenHead":"Bearer","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImNyZWF0ZSI6MTU3NDY1NTg1NDY0MywiZXhwIjoxNTc1MjYwNjU0fQ.426R1Eh3K-YeUGL_gshL65q-LvLWcbj0gshaCD79MmuZdtfrdxKCWpLm_V_oaF7WL0TR4JJSGKHV-rl4nYFrwg"}},"basePath":"http://localhost:8080","method":"POST","ip":"admin","parameter":{},"description":"用户登录成功后返回token","spendTimen":310,"uri":"/admin/login","url":"http://localhost:8080/admin/login"}
+2019-11-25 12:25:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:25:06.318  INFO 423380 --- [http-nio-8080-exec-2] c.e.l.controller.UmsAdminController      : 登入-------------------------------------
+2019-11-25 12:25:06.543  INFO 423380 --- [http-nio-8080-exec-2] c.e.learnmall.component.WebLogAspect     : {"result":{"code":0,"data":{"tokenHead":"Bearer","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImNyZWF0ZSI6MTU3NDY1NTkwNjUzMCwiZXhwIjoxNTc1MjYwNzA2fQ.ulT8OxbpD2HWTjL_CedqD7IFMNDAyhr0sr6SAz76Mo76l1TFmmdjglHsFqWkjWwBzEoxMepFIF3oAe0-RHOWdQ"}},"basePath":"http://localhost:8080","method":"POST","ip":"admin","parameter":{},"description":"用户登录成功后返回token","spendTimen":225,"uri":"/admin/login","url":"http://localhost:8080/admin/login"}
+2019-11-25 12:26:00.003  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:27:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:28:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:29:00.003  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:30:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:31:00.003  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:32:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:32:10.265  INFO 423380 --- [http-nio-8080-exec-5] c.e.l.controller.UmsAdminController      : 登入-------------------------------------
+2019-11-25 12:32:10.556  INFO 423380 --- [http-nio-8080-exec-5] c.e.learnmall.component.WebLogAspect     : {"result":{"code":0,"data":{"tokenHead":"Bearer","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImNyZWF0ZSI6MTU3NDY1NjMzMDU1NSwiZXhwIjoxNTc1MjYxMTMwfQ.iMD2W-tuq8YMk68HfiKS6tnezPo8n1CgKshhziEyX_UXuxyx5xtlNlKYQIlngNsNuCAXVW0ENmZw96cW6Dd-5Q"}},"basePath":"http://localhost:8080","method":"POST","ip":"admin","parameter":{},"description":"用户登录成功后返回token","spendTimen":291,"uri":"/admin/login","url":"http://localhost:8080/admin/login"}
+2019-11-25 12:33:00.003  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:34:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:35:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:36:00.002  INFO 423380 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:37:04.100  INFO 430000 --- [main] c.e.learnmall.LearnMallApplication       : Starting LearnMallApplication on 6AIY682U3XQAGC7 with PID 430000 (E:\studyVue\malllearn\target\classes started by Administrator in E:\studyVue\malllearn)
+2019-11-25 12:37:04.103  INFO 430000 --- [main] c.e.learnmall.LearnMallApplication       : No active profile set, falling back to default profiles: default
+2019-11-25 12:37:08.078  INFO 430000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-25 12:37:08.093  INFO 430000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-25 12:37:08.232  INFO 430000 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.learnmall.nosql.mongodb.repository.MemberReadHistoryRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchCrudRepository.
+2019-11-25 12:37:08.273  INFO 430000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 173ms. Found 1 repository interfaces.
+2019-11-25 12:37:08.280  INFO 430000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-25 12:37:08.280  INFO 430000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-25 12:37:08.323  INFO 430000 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface com.example.learnmall.nosql.mongodb.repository.MemberReadHistoryRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2019-11-25 12:37:08.324  INFO 430000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43ms. Found 0 repository interfaces.
+2019-11-25 12:37:08.332  INFO 430000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-25 12:37:08.332  INFO 430000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-25 12:37:08.365  INFO 430000 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.learnmall.nosql.elasticsearch.repository.EsProductRepository. If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository.
+2019-11-25 12:37:08.391  INFO 430000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58ms. Found 1 repository interfaces.
+2019-11-25 12:37:08.410  INFO 430000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-25 12:37:08.411  INFO 430000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-25 12:37:08.471  INFO 430000 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.learnmall.nosql.elasticsearch.repository.EsProductRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2019-11-25 12:37:08.471  INFO 430000 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.learnmall.nosql.mongodb.repository.MemberReadHistoryRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2019-11-25 12:37:08.472  INFO 430000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47ms. Found 0 repository interfaces.
+2019-11-25 12:37:09.380  INFO 430000 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 12:37:09.617  INFO 430000 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 12:37:09.622  INFO 430000 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 12:37:09.632  INFO 430000 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@13e5d243' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 12:37:09.639  INFO 430000 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 12:37:09.655  INFO 430000 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-25 12:37:10.360  INFO 430000 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-25 12:37:10.373  INFO 430000 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-25 12:37:10.374  INFO 430000 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-25 12:37:10.376  INFO 430000 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-11-25 12:37:10.376  INFO 430000 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-11-25 12:37:10.377  INFO 430000 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-11-25 12:37:10.435  INFO 430000 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-11-25 12:37:10.731  INFO 430000 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-25 12:37:10.732  INFO 430000 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6526 ms
+2019-11-25 12:37:12.108  INFO 430000 --- [main] o.elasticsearch.plugins.PluginsService   : no modules loaded
+2019-11-25 12:37:12.110  INFO 430000 --- [main] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2019-11-25 12:37:12.110  INFO 430000 --- [main] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2019-11-25 12:37:12.110  INFO 430000 --- [main] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2019-11-25 12:37:12.110  INFO 430000 --- [main] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2019-11-25 12:37:12.110  INFO 430000 --- [main] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2019-11-25 12:37:14.342  INFO 430000 --- [main] o.s.d.e.c.TransportClientFactoryBean     : Adding transport node : 127.0.0.1:9300
+2019-11-25 12:37:17.144  INFO 430000 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-11-25 12:37:17.841  INFO 430000 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-11-25 12:37:18.384  INFO 430000 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-11-25 12:37:18.384  INFO 430000 --- [main] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2019-11-25 12:37:18.826  INFO 430000 --- [cluster-ClusterId{value='5ddb5a7eedcaed28ca8253e0', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:34}] to localhost:27017
+2019-11-25 12:37:18.837  INFO 430000 --- [cluster-ClusterId{value='5ddb5a7eedcaed28ca8253e0', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 4]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=3340624}
+2019-11-25 12:37:18.840  INFO 430000 --- [cluster-ClusterId{value='5ddb5a7eedcaed28ca8253e0', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2019-11-25 12:37:18.949  WARN 430000 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2019-11-25 12:37:18.955  WARN 430000 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2019-11-25 12:37:18.957  WARN 430000 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class java.time.Instant as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2019-11-25 12:37:18.957  WARN 430000 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.Instant to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2019-11-25 12:37:19.178  WARN 430000 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2019-11-25 12:37:19.179  WARN 430000 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2019-11-25 12:37:19.180  WARN 430000 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class java.time.Instant as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2019-11-25 12:37:19.180  WARN 430000 --- [main] o.s.data.convert.CustomConversions       : Registering converter from class java.time.Instant to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2019-11-25 12:37:19.269  WARN 430000 --- [main] .m.c.i.MongoPersistentEntityIndexCreator : Automatic index creation will be disabled by default as of Spring Data MongoDB 3.x.
+	Please use 'MongoMappingContext#setAutoIndexCreation(boolean)' or override 'MongoConfigurationSupport#autoIndexCreation()' to be explicit.
+	However, we recommend setting up indices manually in an application ready block. You may use index derivation there as well.
+
+	> -----------------------------------------------------------------------------------------
+	> @EventListener(ApplicationReadyEvent.class)
+	> public void initIndicesAfterStartup() {
+	>
+	>     IndexOperations indexOps = mongoTemplate.indexOps(DomainType.class);
+	>
+	>     IndexResolver resolver = new MongoPersistentEntityIndexResolver(mongoMappingContext);
+	>     resolver.resolveIndexFor(DomainType.class).forEach(indexOps::ensureIndex);
+	> }
+	> -----------------------------------------------------------------------------------------
+
+2019-11-25 12:37:19.360  INFO 430000 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:35}] to localhost:27017
+2019-11-25 12:37:36.225  INFO 430000 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-11-25 12:37:36.471  INFO 430000 --- [main] c.e.learnmall.config.RabbitMqConfig      : 创建交换机:mall.order.direct
+2019-11-25 12:37:36.485  INFO 430000 --- [main] c.e.learnmall.config.RabbitMqConfig      : 创建延时交换机:mall.order.direct.ttl
+2019-11-25 12:37:37.034  INFO 430000 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4769e70c, org.springframework.security.web.context.SecurityContextPersistenceFilter@d62feaf, org.springframework.security.web.header.HeaderWriterFilter@395abe85, org.springframework.security.web.authentication.logout.LogoutFilter@28d1b2f, com.example.learnmall.component.JwtAuthenticationTokenFilter@11a7840f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73a88711, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@fbdba1c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69346100, org.springframework.security.web.session.SessionManagementFilter@13e5c53c, org.springframework.security.web.access.ExceptionTranslationFilter@128d397c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@d164938]
+2019-11-25 12:37:37.124  INFO 430000 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-11-25 12:37:37.738  INFO 430000 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-25 12:37:39.180  INFO 430000 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2019-11-25 12:37:39.444  INFO 430000 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-25 12:37:39.508  INFO 430000 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-25 12:37:39.602  INFO 430000 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-25 12:37:40.069  INFO 430000 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_1
+2019-11-25 12:37:40.082  INFO 430000 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingPOST_1
+2019-11-25 12:37:40.517  INFO 430000 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2019-11-25 12:37:41.618  INFO 430000 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#61608e1a:0/SimpleConnection@7d583602 [delegate=amqp://mall@127.0.0.1:5672//mall, localPort= 56513]
+2019-11-25 12:37:42.222  INFO 430000 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-25 12:37:42.225  INFO 430000 --- [main] c.e.learnmall.LearnMallApplication       : Started LearnMallApplication in 40.573 seconds (JVM running for 43.614)
+2019-11-25 12:38:00.001  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:38:34.701  INFO 430000 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-25 12:38:34.702  INFO 430000 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-25 12:38:34.996  INFO 430000 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 294 ms
+2019-11-25 12:38:36.791  INFO 430000 --- [http-nio-8080-exec-1] c.e.l.controller.UmsAdminController      : 登入-------------------------------------
+2019-11-25 12:38:43.626  INFO 430000 --- [http-nio-8080-exec-1] c.e.learnmall.component.WebLogAspect     : {"result":{"code":200,"data":{"tokenHead":"Bearer","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImNyZWF0ZSI6MTU3NDY1NjcyMTQxOCwiZXhwIjoxNTc1MjYxNTIxfQ.MsfibtDZs8RgzLpoTbLVCv6tvaXUBBW3oMC7pbYfAhqygogbc2iftowzy-ml0-rEFOdQ31SD7o9SDtXkde6efQ"}},"basePath":"http://localhost:8080","method":"POST","ip":"admin","parameter":{},"description":"用户登录成功后返回token","spendTimen":5345,"uri":"/admin/login","url":"http://localhost:8080/admin/login"}
+2019-11-25 12:39:00.001  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:39:15.175  INFO 430000 --- [http-nio-8080-exec-3] c.e.l.controller.UmsAdminController      : 登入-------------------------------------
+2019-11-25 12:39:15.667  INFO 430000 --- [http-nio-8080-exec-3] c.e.learnmall.component.WebLogAspect     : {"result":{"code":200,"data":{"tokenHead":"Bearer","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImNyZWF0ZSI6MTU3NDY1Njc1NTY2NCwiZXhwIjoxNTc1MjYxNTU1fQ.2-MEfb3xuHDnV4iZFstO-XxQcFQy9iRi9qO_E7LYkYYPCwAuTVLASg2zJs2d2hube4nBPLXBa9mrIj04hdbb6Q"}},"basePath":"http://localhost:8080","method":"POST","ip":"admin","parameter":{},"description":"用户登录成功后返回token","spendTimen":491,"uri":"/admin/login","url":"http://localhost:8080/admin/login"}
+2019-11-25 12:39:15.948  INFO 430000 --- [http-nio-8080-exec-5] c.e.l.c.JwtAuthenticationTokenFilter     : checking username:admin
+2019-11-25 12:39:15.969  INFO 430000 --- [http-nio-8080-exec-5] c.e.l.c.JwtAuthenticationTokenFilter     : authenticated user:admin
+2019-11-25 12:40:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:41:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:42:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:43:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:44:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:45:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:46:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:47:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:48:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:49:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:50:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:51:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:52:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:53:00.011  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:53:47.178  INFO 430000 --- [http-nio-8080-exec-8] c.e.l.controller.UmsAdminController      : 登入-------------------------------------
+2019-11-25 12:53:47.360  INFO 430000 --- [http-nio-8080-exec-8] c.e.learnmall.component.WebLogAspect     : {"result":{"code":200,"data":{"tokenHead":"Bearer","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImNyZWF0ZSI6MTU3NDY1NzYyNzM1OSwiZXhwIjoxNTc1MjYyNDI3fQ.EeNT22Ke96SSPtK4RNsNL1q8IJNq5zj-SbGxMKl6bX_CHAcIp4z5UithlVff3mVA4JMKYCMGErtvgoZ28jPZDw"}},"basePath":"http://localhost:8080","method":"POST","ip":"admin","parameter":{},"description":"用户登录成功后返回token","spendTimen":182,"uri":"/admin/login","url":"http://localhost:8080/admin/login"}
+2019-11-25 12:53:47.413  INFO 430000 --- [http-nio-8080-exec-10] c.e.l.c.JwtAuthenticationTokenFilter     : checking username:admin
+2019-11-25 12:53:47.423  INFO 430000 --- [http-nio-8080-exec-10] c.e.l.c.JwtAuthenticationTokenFilter     : authenticated user:admin
+2019-11-25 12:54:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:55:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:56:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:57:00.001  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:58:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 12:59:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:00:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:01:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:02:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:03:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:04:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:05:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:06:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:07:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:08:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:09:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:10:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:11:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:12:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:13:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:14:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:15:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:16:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:17:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:18:00.001  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:19:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:20:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:21:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:22:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:23:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:24:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:25:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:26:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:27:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:28:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:29:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:30:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:31:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:32:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:33:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:34:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:35:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:36:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:37:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:38:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:39:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:40:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:41:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:42:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:43:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:44:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:45:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:46:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:47:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:48:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:49:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:50:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:51:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:52:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:53:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:54:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:55:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:56:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:57:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:58:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 13:59:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:00:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:01:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:02:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:03:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:04:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:05:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:06:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:07:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:08:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:09:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:10:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:11:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:12:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:13:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:14:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:15:00.000  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:16:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:17:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:18:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:19:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:20:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:21:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:22:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:23:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:24:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:25:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:26:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:27:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:28:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:29:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:30:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:31:00.003  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:32:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存
+2019-11-25 14:32:38.859  WARN 430000 --- [elasticsearch[_client_][transport_worker][T#9]] o.elasticsearch.transport.TcpTransport   : exception caught on transport layer [Netty4TcpChannel{localAddress=/127.0.0.1:56439, remoteAddress=/127.0.0.1:9300}], closing connection
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:600)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:554)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-25 14:32:38.859  WARN 430000 --- [elasticsearch[_client_][transport_worker][T#5]] o.elasticsearch.transport.TcpTransport   : exception caught on transport layer [Netty4TcpChannel{localAddress=/127.0.0.1:56435, remoteAddress=/127.0.0.1:9300}], closing connection
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:600)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:554)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-25 14:32:38.860  WARN 430000 --- [elasticsearch[_client_][transport_worker][T#4]] o.elasticsearch.transport.TcpTransport   : exception caught on transport layer [Netty4TcpChannel{localAddress=/127.0.0.1:56434, remoteAddress=/127.0.0.1:9300}], closing connection
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:600)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:554)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-25 14:32:38.859  WARN 430000 --- [elasticsearch[_client_][transport_worker][T#14]] o.elasticsearch.transport.TcpTransport   : exception caught on transport layer [Netty4TcpChannel{localAddress=/127.0.0.1:56444, remoteAddress=/127.0.0.1:9300}], closing connection
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:600)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:554)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-25 14:32:38.859  WARN 430000 --- [elasticsearch[_client_][transport_worker][T#12]] o.elasticsearch.transport.TcpTransport   : exception caught on transport layer [Netty4TcpChannel{localAddress=/127.0.0.1:56442, remoteAddress=/127.0.0.1:9300}], closing connection
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:600)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:554)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-25 14:32:38.860  WARN 430000 --- [elasticsearch[_client_][transport_worker][T#11]] o.elasticsearch.transport.TcpTransport   : exception caught on transport layer [Netty4TcpChannel{localAddress=/127.0.0.1:56441, remoteAddress=/127.0.0.1:9300}], closing connection
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:600)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:554)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-25 14:32:38.859  WARN 430000 --- [elasticsearch[_client_][transport_worker][T#13]] o.elasticsearch.transport.TcpTransport   : exception caught on transport layer [Netty4TcpChannel{localAddress=/127.0.0.1:56443, remoteAddress=/127.0.0.1:9300}], closing connection
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:600)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:554)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-25 14:32:38.859  WARN 430000 --- [elasticsearch[_client_][transport_worker][T#7]] o.elasticsearch.transport.TcpTransport   : exception caught on transport layer [Netty4TcpChannel{localAddress=/127.0.0.1:56437, remoteAddress=/127.0.0.1:9300}], closing connection
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:600)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:554)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-25 14:32:38.860  WARN 430000 --- [elasticsearch[_client_][transport_worker][T#8]] o.elasticsearch.transport.TcpTransport   : exception caught on transport layer [Netty4TcpChannel{localAddress=/127.0.0.1:56438, remoteAddress=/127.0.0.1:9300}], closing connection
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:600)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:554)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-25 14:32:38.859  WARN 430000 --- [elasticsearch[_client_][transport_worker][T#6]] o.elasticsearch.transport.TcpTransport   : exception caught on transport layer [Netty4TcpChannel{localAddress=/127.0.0.1:56436, remoteAddress=/127.0.0.1:9300}], closing connection
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:600)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:554)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-25 14:32:38.860  WARN 430000 --- [elasticsearch[_client_][transport_worker][T#2]] o.elasticsearch.transport.TcpTransport   : exception caught on transport layer [Netty4TcpChannel{localAddress=/127.0.0.1:56433, remoteAddress=/127.0.0.1:9300}], closing connection
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:600)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:554)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-25 14:32:38.859  WARN 430000 --- [elasticsearch[_client_][transport_worker][T#18]] o.elasticsearch.transport.TcpTransport   : exception caught on transport layer [Netty4TcpChannel{localAddress=/127.0.0.1:63497, remoteAddress=/127.0.0.1:9300}], closing connection
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:600)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:554)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-25 14:32:38.859  WARN 430000 --- [elasticsearch[_client_][transport_worker][T#3]] o.elasticsearch.transport.TcpTransport   : exception caught on transport layer [Netty4TcpChannel{localAddress=/127.0.0.1:56432, remoteAddress=/127.0.0.1:9300}], closing connection
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:600)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:554)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-25 14:32:38.859  WARN 430000 --- [elasticsearch[_client_][transport_worker][T#10]] o.elasticsearch.transport.TcpTransport   : exception caught on transport layer [Netty4TcpChannel{localAddress=/127.0.0.1:56440, remoteAddress=/127.0.0.1:9300}], closing connection
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:600)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:554)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-11-25 14:32:51.445  INFO 430000 --- [cluster-ClusterId{value='5ddb5a7eedcaed28ca8253e0', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Exception in monitor thread while connecting to server localhost:27017
+
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
+
+2019-11-25 14:33:00.002  INFO 430000 --- [scheduling-1] c.e.l.component.OrderTimeOutCancelTask   : 取消订单，并根据订单解锁库存

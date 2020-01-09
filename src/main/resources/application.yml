@@ -1,0 +1,73 @@
+
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+  redis:
+    host: localhost
+    database: 0
+    port: 6379
+    password:
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1ms
+        max-idle: 8
+        min-idle: 0
+    timeout: 3000ms
+  data:
+    elasticsearch:
+      repositories:
+        enabled: true
+      cluster-name: elasticsearch #es集群的名称
+      cluster-nodes: 127.0.0.1:9300 #es的连接地址和端口号
+
+    mongodb:
+      host: localhost
+      port: 27017
+      database: mall-port
+  rabbitmq:
+    host: localhost
+    port: 5672
+    virtual-host: /mall #rabbitmp的虚拟host
+    username: mall
+    password: mall
+    publisher-confirms: true #如果对异步消息需要回调需要设置为true
+
+mybatis:
+  mapper-locations:
+    - classpath:mapper/*.xml
+    - classpath*:com/**/mapper/*.xml
+
+#自定义redis key
+redis:
+  key:
+    prefix:
+      authCode: "portal:authCode:"
+    expire:
+      authCode: 120
+
+#自定义jwt的key
+jwt:
+  tokenHeader: Authorization #JWT存储的请求头
+  secret: mySecret # JWT加解密的钥匙
+  expiration: 604800 #JWT超期限时间60*60*24
+  tokenHead: Bearer #jwt负载中拿到的开头
+
+#oss的相关配置
+aliyun:
+  oss:
+    endpoint: oss-cn-beijing.aliyuncs.com #oss对外服务访问的域名
+    accessKeyId: LTAI4FxaBFnqcFVSZrSjSEFu #访问身份验证中用到的用户标识
+    accessKeySecret: poEa9iciVTP8Bpbn5xbNw4a1VPTNsm #用户加密签名字符串和oss用来验证签名的字符串
+    bucketName: long-mall-oos #oss的存储空间
+    policy:
+      expire: 300 #签名有效期（s)
+    maxSize: 10 #文件上传大小（M）
+    callBack: http://localhost:8080/aliyun/oss/callback #文件上传成功后的回调地址
+    dir:
+      prefix: mall/images/ #上传文件夹路径

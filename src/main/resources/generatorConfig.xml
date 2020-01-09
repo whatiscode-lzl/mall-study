@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <properties resource="generator.properties"/>
+    <context id="mySqlContext" targetRuntime="MyBatis3" defaultModelType="flat">
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+        <property name="javaFileEncoding" value="UTF-8"/>
+        <!--为模型生成序列方法-->
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
+        <!--生成mapper.xml时覆盖原文件-->
+        <plugin type="org.mybatis.generator.plugins.UnmergeableXmlMappersPlugin" />
+       <!-- &lt;!&ndash;覆盖生成XML文件&ndash;&gt;
+        <plugin type="org.mybatis.generator.plugins.UnmergeableXmlMappersPlugin" />-->
+        <!--为生成的JAVA模型创建一个toString()的方法 -->
+        <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
+        <!--自定义生成的代码注释-->
+        <commentGenerator type="com.example.learnmall.mbg.CommentGenerator">
+            <!--是否去除自动生成的注释-->
+            <property name="suppressAllComments" value="true"/>
+            <property name="suppressDate" value="true"/>
+            <property name="addRemarkComments" value="true"/>
+        </commentGenerator>
+        <!--配置数据库连接-->
+        <jdbcConnection driverClass="${jdbc.driverClass}"
+                         connectionURL="${jdbc.connectionURL}"
+                        userId="${jdbc.userId}"
+                        password="${jdbc.password}">
+            <!--解决jdbc升级到8时不能生成代码的为题-->
+            <property name="nullcatalogMeansCurrent" value="true"/>
+        </jdbcConnection>
+        <!--指定生成Model的路径-->
+        <javaModelGenerator targetPackage="com.example.learnmall.mbg.model" targetProject="E:\studyVue\malllearn\src\main\java"/>
+        <!--指定生成mapper.xml的路径-->
+        <sqlMapGenerator targetPackage="com.example.learnmall.mbg.mapper" targetProject="E:\studyVue\malllearn\src\main\resources"/>
+        <!--指定生成mapper接口的路径-->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.example.learnmall.mbg.mapper"
+                             targetProject="E:\studyVue\malllearn\src\main\java"/>
+        <!--生成全部表tableName设为%-->
+        <table tableName="pms_brand">
+            <generatedKey  column="id" sqlStatement="MySql" identity="true"/>
+        </table>
+        <!--后台用户表-->
+        <table tableName="ums_admin">
+            <generatedKey  column="id" sqlStatement="MySql" identity="true"/>
+        </table>
+        <!--后台用户角色表-->
+        <table tableName="ums_role">
+            <generatedKey  column="id" sqlStatement="MySql" identity="true"/>
+        </table>
+        <!--后台用户权限表-->
+        <table tableName="ums_permission">
+            <generatedKey  column="id" sqlStatement="MySql" identity="true"/>
+        </table>
+        <table tableName="ums_admin_role_relation">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
+        <table tableName="ums_role_permission_relation">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
+        <table tableName="ums_admin_permission_relation">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
+    </context>
+
+</generatorConfiguration>
